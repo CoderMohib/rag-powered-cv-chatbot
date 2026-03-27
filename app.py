@@ -26,8 +26,11 @@ st.markdown(
     .stDeployButton {display: none !important;}
     #MainMenu {display: none !important;}
     
-    /* Force hide the Streamlit Cloud "Viewer Badge" (Fork and GitHub buttons) */
-    div[class^="viewerBadge_"] {display: none !important;}
+    /* Force hide the Streamlit Cloud "Viewer/Creator Badges" (Watermarks, Fork, GitHub buttons) */
+    div[class^="viewerBadge_"], a[class^="viewerBadge_"],
+    div[class^="creatorBadge_"], a[class^="creatorBadge_"] {
+        display: none !important;
+    }
     
     header {background: transparent !important;}
     footer {display: none !important;}
