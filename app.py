@@ -25,6 +25,10 @@ st.markdown(
     [data-testid="stActionPeers"] {display: none !important;}
     .stDeployButton {display: none !important;}
     #MainMenu {display: none !important;}
+    
+    /* Force hide the Streamlit Cloud "Viewer Badge" (Fork and GitHub buttons) */
+    div[class^="viewerBadge_"] {display: none !important;}
+    
     header {background: transparent !important;}
     footer {display: none !important;}
     
