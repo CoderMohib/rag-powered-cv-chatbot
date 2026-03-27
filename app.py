@@ -21,10 +21,13 @@ st.markdown(
         font-family: 'Inter', sans-serif;
     }
     
-    /* Keep header for sidebar toggle, but hide Streamlit branding */
-    #MainMenu {visibility: hidden;}
-    .stDeployButton {display:none;}
-    footer {visibility: hidden;}
+    /* Hide ALL right-side header elements (Deploy, Share, GitHub, Menu) injected by Streamlit Cloud */
+    [data-testid="stToolbar"] {display: none !important;}
+    [data-testid="stActionPeers"] {display: none !important;}
+    .stDeployButton {display: none !important;}
+    #MainMenu {display: none !important;}
+    header {background: transparent !important;}
+    footer {display: none !important;}
     
     /* Reduce massive default gaps in sidebar dividers */
     [data-testid="stSidebar"] hr {
