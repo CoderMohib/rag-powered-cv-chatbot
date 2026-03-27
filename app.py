@@ -21,8 +21,7 @@ st.markdown(
         font-family: 'Inter', sans-serif;
     }
     
-    /* Hide ALL right-side header elements (Deploy, Share, GitHub, Menu) injected by Streamlit Cloud */
-    [data-testid="stToolbar"] {display: none !important;}
+    /* Hide ALL right-side header elements (Deploy, Share, GitHub, Menu) WITHOUT hiding the Sidebar Toggle */
     [data-testid="stActionPeers"] {display: none !important;}
     .stDeployButton {display: none !important;}
     #MainMenu {display: none !important;}
